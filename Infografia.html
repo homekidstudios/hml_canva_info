@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Revolución de la IA</title>
+    <!-- Tailwind CSS para diseño rápido y responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fuente Google: Montserrat para títulos y Open Sans para cuerpo -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Iconos de Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #0f172a; /* Slate 900 - Fondo oscuro para contraste */
+            color: #f1f5f9; /* Slate 100 - Texto claro */
+        }
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #38bdf8, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.2);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- TÍTULO / ENCABEZADO -->
+    <header class="text-center py-16 px-4 bg-slate-900 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600"></div>
+        <div class="max-w-4xl mx-auto relative z-10">
+            <span class="inline-block py-1 px-3 rounded-full bg-cyan-900/50 text-cyan-300 text-sm font-bold tracking-wide mb-4 border border-cyan-700">
+                TECNOLOGÍA Y FUTURO
+            </span>
+            <h1 class="text-5xl md:text-7xl font-black mb-6 tracking-tight text-white">
+                INTELIGENCIA <br> <span class="gradient-text">ARTIFICIAL</span>
+            </h1>
+            <p class="text-xl text-slate-400 max-w-2xl mx-auto">
+                Una mirada profunda a la tecnología que está redefiniendo cómo vivimos, aprendemos y trabajamos.
+            </p>
+        </div>
+        <!-- Elementos decorativos de fondo -->
+        <div class="absolute top-10 left-10 w-32 h-32 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+        <div class="absolute top-10 right-10 w-32 h-32 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 pb-20 space-y-16">
+
+        <!-- BLOQUE 1: DEFINICIÓN -->
+        <section class="bg-slate-800 rounded-3xl p-8 md:p-12 border border-slate-700 shadow-2xl relative overflow-hidden">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="flex-1">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i data-lucide="cpu" class="w-8 h-8 text-cyan-400"></i>
+                        <h2 class="text-3xl font-bold text-white">¿Qué es la IA?</h2>
+                    </div>
+                    <p class="text-slate-300 leading-relaxed text-lg">
+                        Es la simulación de procesos de inteligencia humana por parte de sistemas informáticos. Estos procesos incluyen el <strong class="text-cyan-300">aprendizaje</strong> (adquirir información), el <strong class="text-purple-300">razonamiento</strong> (usar reglas para llegar a conclusiones) y la <strong class="text-pink-300">autocorrección</strong>.
+                    </p>
+                </div>
+                <div class="bg-slate-900 p-6 rounded-xl border border-slate-700 w-full md:w-1/3 text-center">
+                    <div class="text-5xl font-black text-cyan-500 mb-2">1956</div>
+                    <p class="text-sm text-slate-400">Año en que se acuñó el término en la conferencia de Dartmouth.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOQUE 2: TIPOS DE IA -->
+        <section>
+            <div class="flex items-center gap-3 mb-8 justify-center">
+                <i data-lucide="layers" class="w-8 h-8 text-purple-400"></i>
+                <h2 class="text-3xl font-bold text-center">Clasificación Principal</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- ANI -->
+                <article class="card bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-2xl border-l-4 border-cyan-500">
+                    <h3 class="text-2xl font-bold text-cyan-400 mb-3">IA Estrecha (ANI)</h3>
+                    <p class="text-slate-300 mb-4 text-sm uppercase tracking-wider font-bold">La realidad actual</p>
+                    <p class="text-slate-400">Diseñada para realizar una tarea específica mejor que un humano. Es la IA que usamos hoy.</p>
+                    <div class="mt-6 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-700 rounded-full text-xs text-cyan-200">Siri/Alexa</span>
+                        <span class="px-3 py-1 bg-slate-700 rounded-full text-xs text-cyan-200">Recomendaciones Netflix</span>
+                        <span class="px-3 py-1 bg-slate-700 rounded-full text-xs text-cyan-200">Chatbots</span>
+                    </div>
+                </article>
+
+                <!-- AGI -->
+                <article class="card bg-gradient-to-br from-slate-800 to-slate-900 p-8 rounded-2xl border-l-4 border-purple-500">
+                    <h3 class="text-2xl font-bold text-purple-400 mb-3">IA General (AGI)</h3>
+                    <p class="text-slate-300 mb-4 text-sm uppercase tracking-wider font-bold">El concepto teórico</p>
+                    <p class="text-slate-400">Un sistema con la capacidad de entender, aprender y aplicar conocimiento en una amplia variedad de tareas, igualando al humano.</p>
+                    <div class="mt-6 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-700 rounded-full text-xs text-purple-200">Robots de Sci-Fi</span>
+                        <span class="px-3 py-1 bg-slate-700 rounded-full text-xs text-purple-200">Razonamiento Abstracto</span>
+                        <span class="px-3 py-1 bg-slate-700 rounded-full text-xs text-purple-200">Futuro Lejano</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- BLOQUE 3: IMPACTO EN LA SOCIEDAD -->
+        <section>
+            <div class="flex items-center gap-3 mb-8">
+                <i data-lucide="globe" class="w-8 h-8 text-green-400"></i>
+                <h2 class="text-3xl font-bold">Impacto en la Sociedad</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Educación -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-green-500 transition-colors">
+                    <div class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="graduation-cap" class="text-green-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Educación</h3>
+                    <p class="text-slate-400 text-sm">Tutores personalizados, generación de material didáctico y detección de plagio.</p>
+                </div>
+                <!-- Medicina -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-pink-500 transition-colors">
+                    <div class="w-12 h-12 bg-pink-500/20 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="heart-pulse" class="text-pink-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Salud</h3>
+                    <p class="text-slate-400 text-sm">Diagnósticos rápidos de radiografías, descubrimiento de fármacos y cirugía robótica.</p>
+                </div>
+                <!-- Creatividad -->
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-yellow-500 transition-colors">
+                    <div class="w-12 h-12 bg-yellow-500/20 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="palette" class="text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Creatividad</h3>
+                    <p class="text-slate-400 text-sm">Generación de imágenes (DALL-E), música, redacción de textos y diseño gráfico.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOQUE 4: ÉTICA Y DESAFÍOS -->
+        <section class="bg-gradient-to-r from-red-900/40 to-slate-800 p-8 rounded-3xl border border-red-900/50">
+            <div class="flex items-center gap-3 mb-6">
+                <i data-lucide="alert-triangle" class="w-8 h-8 text-red-400"></i>
+                <h2 class="text-3xl font-bold text-white">Desafíos Éticos</h2>
+            </div>
+            <ul class="space-y-4">
+                <li class="flex items-start gap-3">
+                    <i data-lucide="check-circle-2" class="w-6 h-6 text-red-400 mt-1 shrink-0"></i>
+                    <div>
+                        <strong class="text-white block">Sesgo Algorítmico</strong>
+                        <span class="text-slate-400">Si los datos de entrenamiento tienen prejuicios, la IA replicará o amplificará esos prejuicios raciales o de género.</span>
+                    </div>
+                </li>
+                <li class="flex items-start gap-3">
+                    <i data-lucide="check-circle-2" class="w-6 h-6 text-red-400 mt-1 shrink-0"></i>
+                    <div>
+                        <strong class="text-white block">Privacidad de Datos</strong>
+                        <span class="text-slate-400">El uso de datos personales masivos para entrenar modelos plantea serias dudas sobre la propiedad intelectual y la privacidad.</span>
+                    </div>
+                </li>
+                <li class="flex items-start gap-3">
+                    <i data-lucide="check-circle-2" class="w-6 h-6 text-red-400 mt-1 shrink-0"></i>
+                    <div>
+                        <strong class="text-white block">Desplazamiento Laboral</strong>
+                        <span class="text-slate-400">La automatización amenaza ciertos empleos, requiriendo una urgente recapacitación de la fuerza laboral.</span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- CONCLUSIÓN -->
+        <section class="text-center py-10">
+            <h2 class="text-2xl font-bold text-white mb-4">Conclusión</h2>
+            <p class="text-lg text-slate-300 max-w-3xl mx-auto italic border-l-4 border-cyan-500 pl-6 text-left md:text-center md:border-l-0 md:pl-0">
+                "La IA no viene a reemplazar al ser humano, sino a potenciar nuestras capacidades. El desafío no es tecnológico, sino ético y educativo: debemos aprender a usarla como una herramienta responsable para el bien común."
+            </p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER / CRÉDITOS -->
+    <footer class="bg-black py-12 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-6 grid md:grid-cols-2 gap-8 text-sm">
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase tracking-widest text-xs">Fuentes Consultadas</h4>
+                <ul class="space-y-2 text-slate-500">
+                    <li>• McCarthy, J., et al. (1955). "A Proposal for the Dartmouth Summer Research Project on AI".</li>
+                    <li>• UNESCO (2023). "Guía sobre IA generativa en educación".</li>
+                    <li>• Russell, S. & Norvig, P. (2021). "Artificial Intelligence: A Modern Approach".</li>
+                </ul>
+            </div>
+            <div class="md:text-right">
+                <h4 class="text-white font-bold mb-4 uppercase tracking-widest text-xs">Créditos</h4>
+                <p class="text-slate-500 mb-2">Diseñado por: <span class="text-slate-300">[Tu Nombre Aquí]</span></p>
+                <p class="text-slate-500 mb-2">Herramienta: <span class="text-slate-300">HTML5 + Tailwind CSS</span></p>
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-700 mt-2">
+                    <i data-lucide="sparkles" class="w-3 h-3 text-cyan-400"></i>
+                    <span class="text-xs text-cyan-400">Asistido por Inteligencia Artificial</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Inicializar iconos -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
